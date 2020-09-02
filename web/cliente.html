@@ -1,103 +1,107 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro de Cliente</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="cliente.css" media="screen" />
-   
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color:rgb(184, 178, 178);" >
-        <a class="navbar-brand" href="#">CRUD</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Clientes <span class="sr-only">(current)</span></a>
-            </li>
-          </ul>
-        </div>
-    </nav>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Cliente</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="cliente.css" media="screen" />
+
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color:rgb(184, 178, 178);">
+    <a class="navbar-brand" href="#">CRUD</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Clientes <span class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
 </head>
+
 <body>
   <h3>Novo Cliente</h3>
   <HR>
+  <div class="container">
     <form>
-        <div class="row" id="div1linha">
-            <div class="col">
-             <input type="text" class="form-control" id="nome" placeholder="Nome">
-             </div>
-            <div class="col">
-              <input type="text" class="form-control" id="cpf" placeholder="CPF">
-             </div>
-        
-             <div class="col">
-               <input type="text" class="form-control" id="datanasc" placeholder="Data de nascimento">
-            </div>
-        
-              
-        
-         </div>
-      </form>
-    <form>
-        <div class="row" id="div2linha">
-            <div class="col">
-             <input type="text" class="form-control" id="endereco" placeholder="Endereço">
-             </div>
-            <div class="col">
-              <input type="text" class="form-control" id="bairro" placeholder="Bairro">
-             </div>
-        
-             <div class="col">
-               <input type="text" class="form-control" id="cep" placeholder="CEP">
-            </div>
-        
-              <div class="col">
-               <input type="date" class="form-control" id="datacadastro" placeholder="Data de Cadastro">
-             </div>
-        
-         </div>
-      </form>
-   
-      <form>
-        <div class="row" id="div3linha">
-            <div class="col">
-             <input type="text" class="form-control" id="municipio" placeholder="Municipio">
-             </div>
-            <div class="col">
-              <input type="text" class="form-control" id="telefone" placeholder="Telefone">
-             </div>
-        
-             <div class="col">
-               <input type="text" class="form-control" id="celular" placeholder="Celular">
-            </div>
-        
-              <div class="col">
-               <input type="text" class="form-control" id="uf" placeholder="UF">
-             </div>
-             <div class="col">
-                <input type="text" class="form-control" id="inscri" placeholder="Inscrição Estatual">
-              </div>
-        
-         </div>
-      </form>
-   
-      <form>
-        <div class="row">
-            <div id="divSalvar" class="col">
-              <button id="ButtonSalvar" class="btn btn-primary" onclick="Salvar()" ></button>
-             </div>
-
-             <div id="divCancelar" class="col">
-               <button id="ButtonCancelar" class="btn btn-danger" ></button>
-             </div>
-
+      <div class="form-row" id="div1linha">
+        <div class="col">
+          <input type="text" class="form-control" id="nome" placeholder="Nome">
         </div>
- 
- </form>
-      <script type="text/javascript" src="cliente.js"></script>
+        <div class="col">
+          <input type="text" class="form-control" id="cpf" placeholder="CPF">
+        </div>
+
+        <div class="col">
+          <input type="text" class="form-control" id="datanasc" placeholder="Data de nascimento">
+        </div>
+      </div>
+    </form>
+    <form>
+      <div class="form-row" id="div2linha">
+        <div class="col">
+          <input type="text" class="form-control" id="endereco" placeholder="Endereço">
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" id="bairro" placeholder="Bairro">
+        </div>
+
+        <div class="col">
+          <input type="text" class="form-control" id="cep" placeholder="CEP">
+        </div>
+
+        <div class="col">
+          <input type="date" class="form-control" id="datacadastro" placeholder="Data de Cadastro">
+        </div>
+
+      </div>
+    </form>
+
+    <form>
+      <div class="form-row" id="div3linha">
+        <div class="col">
+          <input type="text" class="form-control" id="municipio" placeholder="Municipio">
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" id="telefone" placeholder="Telefone">
+        </div>
+
+        <div class="col">
+          <input type="text" class="form-control" id="celular" placeholder="Celular">
+        </div>
+
+        <div class="col">
+          <input type="text" class="form-control" id="uf" placeholder="UF">
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" id="inscri" placeholder="Inscrição Estatual">
+        </div>
+
+      </div>
+    </form>
+
+    <form>
+      <div class="form-row">
+        <div id="divSalvar" class="d-inline-flex p-2">
+          <button id="ButtonSalvar" class="btn btn-primary" onclick="Salvar()"></button>
+        </div>
+
+        <div id="divCancelar" class="d-inline-flex p-2" >
+          <button id="ButtonCancelar" class="btn btn-danger"></button>
+        </div>
+
+      </div>
+
+    </form>
+  </div>
+  <script type="text/javascript" src="cliente.js"></script>
 </body>
+
 </html>
